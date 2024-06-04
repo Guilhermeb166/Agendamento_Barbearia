@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Horário</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <!--Sobreposição-->
+    <div id="overlay"></div>
+    <!--Cabeçalho-->
+    <header>
+        <img src="src/img/feitosa-logo-removebg-preview.png" alt="">
+        <h1>Seja Bem vindo ao Feitosa Barber</h1>
+    </header>
+    <!--Formulário-->
+    <section class="form">
+        <form action="">
+            <label for="nome">Qual o seu nome?</label>
+            <input type="text" name="nome" id="nome"  autocomplete="off">
+
+            <label for="data">Escolha o dia</label>
+            <input type="date" id="data" name="data" required >
+
+                <label >Escolha um horário</label>
+                <div id="horarios">
+                    <label><input type="radio" name="hora-option"> <span>00:00</span></label>
+                    <label><input type="radio" name="hora-option"> <span>00:00</span></label>
+                    <label><input type="radio" name="hora-option"> <span>00:30</span></label>
+                    <label><input type="radio" name="hora-option"> <span>00:00</span></label>
+                    <label><input type="radio" name="hora-option"> <span>00:30</span></label>
+                    <label><input type="radio" name="hora-option"> <span>00:00</span></label>
+                    <label><input type="radio" name="hora-option"> <span>00:30</span></label>
+                    <label><input type="radio" name="hora-option"> <span>00:00</span></label>
+                    <label><input type="radio" name="hora-option"> <span>00:30</span></label>
+                    <label><input type="radio" name="hora-option"> <span>00:00</span></label>
+                    <label><input type="radio" name="hora-option"> <span>00:30</span></label>
+                    <label><input type="radio" name="hora-option"> <span>00:00</span></label>
+                    <label><input type="radio" name="hora-option"> <span>00:30</span></label>
+                    <label><input type="radio" name="hora-option"> <span>00:00</span></label>
+                    <label><input type="radio" name="hora-option"> <span>00:30</span></label>
+                    <label><input type="radio" name="hora-option"> <span>00:00</span></label>
+                    <label><input type="radio" name="hora-option"> <span>00:30</span></label>
+                    <label><input type="radio" name="hora-option"> <span>00:00</span></label>
+
+                </div>
+
+
+            <div class="service-selection">
+                <h1>Escolha aqui o serviço</h1>
+                <div id="service-option">
+                    <label>
+                        <input type="radio" name="option" onclick="borda(event)">
+                        <img src="src/img/cabelo.png" alt="">
+                        <p>Cabelo</p>
+                    </label>
+                    <label>
+                        <input type="radio" name="option" onclick="borda(event)">
+                        <img src="src/img/barba.png" alt="">
+                        <p>Barba</p>
+                    </label>
+                    <label>
+                        <input type="radio" name="option" onclick="borda(event)">
+                        <img src="src/img/barba-cabelo.png" alt="">
+                        <p>Barba e cabelo</p>
+                    </label>
+                    
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <script src="src/scripts/script.js"></script>
+</body>
+</html>
