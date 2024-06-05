@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendamento de Horário</title>
     <link rel="stylesheet" href="src/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <!--Sobreposição-->
     <div id="overlay"></div>
     <!--Cabeçalho-->
     <header>
-        <img src="src/img/feitosa-logo-removebg-preview.png" alt="">
+        <img src="src/img/feitosa-removebg-preview.png" alt="">
         <h1>Seja Bem vindo ao Feitosa Barber</h1>
     </header>
     <!--Formulário-->
@@ -24,25 +25,28 @@
             <input type="date" id="data" name="data" required >
 
                 <label >Escolha um horário</label>
+                <p onclick="abrirHorarios()" id="abrirHorarios">Clique aqui para saber os horários  disponíveis <i class='bx bxs-down-arrow'></i></p>
+               
                 <div id="horarios">
-                    <label><input type="radio" name="hora-option"> <span>00:00</span></label>
-                    <label><input type="radio" name="hora-option"> <span>00:00</span></label>
-                    <label><input type="radio" name="hora-option"> <span>00:30</span></label>
-                    <label><input type="radio" name="hora-option"> <span>00:00</span></label>
-                    <label><input type="radio" name="hora-option"> <span>00:30</span></label>
-                    <label><input type="radio" name="hora-option"> <span>00:00</span></label>
-                    <label><input type="radio" name="hora-option"> <span>00:30</span></label>
-                    <label><input type="radio" name="hora-option"> <span>00:00</span></label>
-                    <label><input type="radio" name="hora-option"> <span>00:30</span></label>
-                    <label><input type="radio" name="hora-option"> <span>00:00</span></label>
-                    <label><input type="radio" name="hora-option"> <span>00:30</span></label>
-                    <label><input type="radio" name="hora-option"> <span>00:00</span></label>
-                    <label><input type="radio" name="hora-option"> <span>00:30</span></label>
-                    <label><input type="radio" name="hora-option"> <span>00:00</span></label>
-                    <label><input type="radio" name="hora-option"> <span>00:30</span></label>
-                    <label><input type="radio" name="hora-option"> <span>00:00</span></label>
-                    <label><input type="radio" name="hora-option"> <span>00:30</span></label>
-                    <label><input type="radio" name="hora-option"> <span>00:00</span></label>
+                    <label><input type="radio" name="hora-option" onclick="hora(event)"> <span>09:00</span></label>
+                    <label><input type="radio" name="hora-option" onclick="hora(event)"> <span>09:30</span></label>
+                    <label><input type="radio" name="hora-option" onclick="hora(event)"> <span>10:00</span></label>
+                    <label><input type="radio" name="hora-option" onclick="hora(event)"> <span>10:30</span></label>
+                    <label><input type="radio" name="hora-option" onclick="hora(event)"> <span>11:00</span></label>
+                    <label><input type="radio" name="hora-option" onclick="hora(event)"> <span>11:30</span></label>
+                    <label><input type="radio" name="hora-option" onclick="hora(event)"> <span>12:00</span></label>
+                    <label><input type="radio" name="hora-option" onclick="hora(event)"> <span>12:30</span></label>
+                    <label><input type="radio" name="hora-option" onclick="hora(event)"> <span>14:00</span></label>
+                    <label><input type="radio" name="hora-option" onclick="hora(event)"> <span>14:30</span></label>
+                    <label><input type="radio" name="hora-option" onclick="hora(event)"> <span>15:00</span></label>
+                    <label><input type="radio" name="hora-option" onclick="hora(event)"> <span>15:30<span></label>
+                    <label><input type="radio" name="hora-option" onclick="hora(event)"> <span>16:00</span></label>
+                    <label><input type="radio" name="hora-option" onclick="hora(event)"> <span>16:30</span></label>
+                    <label><input type="radio" name="hora-option" onclick="hora(event)"> <span>17:00</span></label>
+                    <label><input type="radio" name="hora-option" onclick="hora(event)"> <span>17:30</span></label>
+                    <label><input type="radio" name="hora-option" onclick="hora(event)"> <span>18:00</span></label>
+                    <label><input type="radio" name="hora-option" onclick="hora(event)"> <span>18:30</span></label>
+                    <i class='bx bx-x' onclick="fechaHorarios()"></i>
 
                 </div>
 
@@ -68,6 +72,8 @@
                     
                 </div>
             </div>
+
+            <button class="agendar-btn">Agendar Horário</button>
         </form>
     </section>
 
