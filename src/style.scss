@@ -177,7 +177,7 @@ header {
 
         cursor: pointer;
 
-        label {
+        div{
           cursor: pointer;
           margin: 0 5px;
           outline: none;
@@ -199,7 +199,7 @@ header {
           }
         }
         /*Estilização para quando clicar no card*/
-        label.borda-adicionada {
+        div.borda-adicionada {
           border: 4px solid #e4ce6a;
           background-color: #e4ce6ac6 !important;
 

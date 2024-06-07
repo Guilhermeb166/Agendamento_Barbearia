@@ -151,18 +151,18 @@ function hora(event) {
 
   /*Função para adicionar borda ao selecionar o tipo de serviço */
 function borda(event) {
-    let opcao = event.currentTarget.parentNode; // Captura o elemento pai do input (ou seja, o label)
+    let opcao = event.currentTarget;  //Captura o elemento atual (o div que foi clicado)
 
     // Verifica se o elemento clicado já possui a classe 'borda-adicionada'
     if (opcao.classList.contains('borda-adicionada')) {
         opcao.classList.remove('borda-adicionada'); // Remove a classe se já estiver presente
     } else {
-        let labels = document.querySelectorAll('#service-option label');
+        let divs = document.querySelectorAll('#service-option div');
 
-        // Remove a classe 'borda-adicionada' de todos os labels
-        labels.forEach(label => {
-            if (label.classList.contains('borda-adicionada')) {
-                label.classList.remove('borda-adicionada');
+        // Remove a classe 'borda-adicionada' de todos os divs
+        divs.forEach(div => {
+            if (div.classList.contains('borda-adicionada')) {
+                div.classList.remove('borda-adicionada');
             }
         });
 

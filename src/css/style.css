@@ -163,7 +163,7 @@ header h1 {
   cursor: pointer;
   /*Estilização para quando clicar no card*/
 }
-.form form .service-selection #service-option label {
+.form form .service-selection #service-option div {
   cursor: pointer;
   margin: 0 5px;
   outline: none;
@@ -177,20 +177,20 @@ header h1 {
   align-items: center;
   margin-bottom: 30px;
 }
-.form form .service-selection #service-option label p {
+.form form .service-selection #service-option div p {
   text-align: center;
   margin-bottom: 10px;
   font-size: 16px;
   color: #333;
 }
-.form form .service-selection #service-option label.borda-adicionada {
+.form form .service-selection #service-option div.borda-adicionada {
   border: 4px solid #e4ce6a;
   background-color: rgba(228, 206, 106, 0.7764705882) !important;
 }
-.form form .service-selection #service-option label.borda-adicionada p {
+.form form .service-selection #service-option div.borda-adicionada p {
   color: #000000;
 }
-.form form .service-selection #service-option label.borda-adicionada img {
+.form form .service-selection #service-option div.borda-adicionada img {
   width: 70px;
   margin: 10.8px;
 }
