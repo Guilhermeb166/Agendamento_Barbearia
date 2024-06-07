@@ -176,9 +176,6 @@ header {
         flex-wrap: wrap;
 
         cursor: pointer;
-        &:active {
-          text-decoration: none;
-        }
 
         label {
           cursor: pointer;
@@ -199,6 +196,15 @@ header {
             margin-bottom: 10px;
             font-size: 16px;
             color: #333;
+          }
+
+          input:focus +p{
+            outline: none;
+          }
+
+          input:focus-visible{
+            outline: none;
+            box-shadow: none;
           }
         }
         /*Estilização para quando clicar no card*/

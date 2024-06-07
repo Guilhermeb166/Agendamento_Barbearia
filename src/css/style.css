@@ -164,9 +164,6 @@ header h1 {
   cursor: pointer;
   /*Estilização para quando clicar no card*/
 }
-.form form .service-selection #service-option:active {
-  text-decoration: none;
-}
 .form form .service-selection #service-option label {
   cursor: pointer;
   margin: 0 5px;
@@ -186,6 +183,13 @@ header h1 {
   margin-bottom: 10px;
   font-size: 16px;
   color: #333;
+}
+.form form .service-selection #service-option label input:focus + p {
+  outline: none;
+}
+.form form .service-selection #service-option label input:focus-visible {
+  outline: none;
+  box-shadow: none;
 }
 .form form .service-selection #service-option label.borda-adicionada {
   border: 4px solid #e4ce6a;
