@@ -154,6 +154,7 @@ header {
       display: flex;
       flex-direction: column;
       margin-top: 50px;
+      width: 100%;
 
       h1 {
         font-size: 1.6em;
@@ -168,7 +169,10 @@ header {
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
+        margin: auto;
+        width: 100%;
         margin-top: 15px;
+
         cursor: pointer;
         &:active {
           text-decoration: none;
@@ -216,7 +220,7 @@ header {
     /*ínicio da estilização do botão de agendar*/
     .agendar-btn {
       border-radius: 5px;
-      width: 170px;
+      width: 200px;
       margin: auto;
       margin-top: 30px;
       font-size: 1.1em;
