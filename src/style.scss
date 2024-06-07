@@ -255,3 +255,8 @@ header {
     } /*Fim da estilização do botão de agendar*/
   } /*Fim da tag form*/
 } /*Fim da section Formulário*/
+label:focus,
+label:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}

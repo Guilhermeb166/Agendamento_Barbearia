@@ -224,4 +224,9 @@ header h1 {
   background-color: #ddc34d;
 }
 
-/*Fim da section Formulário*//*# sourceMappingURL=style.css.map */
+/*Fim da section Formulário*/
+label:focus,
+label:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}/*# sourceMappingURL=style.css.map */
