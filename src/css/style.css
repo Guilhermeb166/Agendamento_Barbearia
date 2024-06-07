@@ -161,6 +161,7 @@ header h1 {
   margin-top: 15px;
   overflow: hidden;
   flex-wrap: wrap;
+  outline: none;
   cursor: pointer;
   /*Estilização para quando clicar no card*/
 }
@@ -226,7 +227,8 @@ header h1 {
 
 /*Fim da section Formulário*/
 label:focus,
-label:focus-visible {
+label:focus-visible,
+label:-moz-focusring {
   outline: none !important;
   box-shadow: none !important;
 }/*# sourceMappingURL=style.css.map */

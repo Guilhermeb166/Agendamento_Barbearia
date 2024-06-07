@@ -174,7 +174,7 @@ header {
         margin-top: 15px;
         overflow: hidden;
         flex-wrap: wrap;
-
+        outline: none;
         cursor: pointer;
 
         label {
@@ -253,10 +253,14 @@ header {
         background-color: #ddc34d;
       }
     } /*Fim da estilização do botão de agendar*/
+
   } /*Fim da tag form*/
+
 } /*Fim da section Formulário*/
+
 label:focus,
-label:focus-visible {
+label:focus-visible,
+label:-moz-focusring {
   outline: none !important;
   box-shadow: none !important;
 }
