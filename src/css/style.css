@@ -140,6 +140,7 @@ header h1 {
   flex-direction: column;
   margin-top: 50px;
   width: 100%;
+  z-index: 9999;
   /*ínicio da estilização dos card de serviço oferecido*/
   /*fim da estilização dos card de serviço oferecido*/
 }
