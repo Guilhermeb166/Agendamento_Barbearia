@@ -26,7 +26,7 @@ header {
   color: #fff;
   height: 120px;
   position: relative;
-  z-index: 2;
+
   width: 100%;
 
   img {
@@ -46,7 +46,7 @@ header {
 /*ínicio da section Formulário*/
 .form {
   position: relative;
-  z-index: 2;
+
   width: 100%;
 
   /*ínicio da tag form*/
@@ -174,7 +174,7 @@ header {
         margin-top: 15px;
         overflow: hidden;
         flex-wrap: wrap;
-        outline: none;
+
         cursor: pointer;
 
         label {
@@ -196,16 +196,7 @@ header {
             margin-bottom: 10px;
             font-size: 16px;
             color: #333;
-
-
           }
-
-          &:focus,&:focus-visible{
-            outline: none;
-            box-shadow: none;
-          }
-
-          
         }
         /*Estilização para quando clicar no card*/
         label.borda-adicionada {
@@ -253,16 +244,5 @@ header {
         background-color: #ddc34d;
       }
     } /*Fim da estilização do botão de agendar*/
-
   } /*Fim da tag form*/
-
 } /*Fim da section Formulário*/
-
-label:focus,
-label:focus-visible,
-label:active,
-label:focus-within,
-label:-moz-focusring {
-  outline: none !important;
-  box-shadow: none !important;
-}
