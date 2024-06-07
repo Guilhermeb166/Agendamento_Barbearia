@@ -228,6 +228,8 @@ header h1 {
 /*Fim da section Formulário*/
 label:focus,
 label:focus-visible,
+label:active,
+label:focus-within,
 label:-moz-focusring {
   outline: none !important;
   box-shadow: none !important;
