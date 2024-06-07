@@ -196,16 +196,16 @@ header {
             margin-bottom: 10px;
             font-size: 16px;
             color: #333;
+
+
           }
 
-          input:focus +p{
-            outline: none;
-          }
-
-          input:focus-visible{
+          &:focus,&:focus-visible{
             outline: none;
             box-shadow: none;
           }
+
+          
         }
         /*Estilização para quando clicar no card*/
         label.borda-adicionada {

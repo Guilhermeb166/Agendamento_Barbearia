@@ -184,10 +184,7 @@ header h1 {
   font-size: 16px;
   color: #333;
 }
-.form form .service-selection #service-option label input:focus + p {
-  outline: none;
-}
-.form form .service-selection #service-option label input:focus-visible {
+.form form .service-selection #service-option label:focus, .form form .service-selection #service-option label:focus-visible {
   outline: none;
   box-shadow: none;
 }
