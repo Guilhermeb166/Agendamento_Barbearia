@@ -1,235 +1,228 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oxanium:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oxanium:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oxanium:wght@200..800&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oxanium:wght@200..800&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Poetsen One", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poetsen One", sans-serif;
 }
 
 body {
-    background: #272727 url('../img/BARBEARIA-fundo.png') no-repeat center;
-    background-size: cover;
-    height: 100vh;
-    position: relative;
+  background: #272727 url("../img/BARBEARIA-fundoteste.jpg") repeat center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
 }
 
-#overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #272727d9; 
-    z-index: 1;
-}
-
+/*ínicio do Cabeçalho*/
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color: #fff;
-    height: 120px;
-    position: relative;
-    z-index: 2;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+  height: 120px;
+  position: relative;
+  z-index: 2;
+  width: 100%;
 
-    img {
-        height: 130px;
-    }
+  img {
+    height: 130px;
+  }
 
-    h1 {
-        font-size: 1.8em;
-        letter-spacing: 3px;
-        text-align: center;
-        font-family: "Bebas Neue", sans-serif;
-        margin-right: 5px;
-    }
+  h1 {
+    font-size: 1.8em;
+    letter-spacing: 3px;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    margin-right: 5px;
+  }
 }
+/*Fim do Cabeçalho*/
 
+/*ínicio da section Formulário*/
 .form {
-    position: relative;
-    z-index: 2;
-    width: 100%;
+  position: relative;
+  z-index: 2;
+  width: 100%;
 
-    form {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        width: 70%;
-        color: #fff;
-        
+  /*ínicio da tag form*/
+  form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 70%;
+    color: #fff;
 
-        label {
-            margin: auto; 
-        }
+    label {
+      margin: auto;
+    }
+
+    input {
+      border-radius: 7px;
+      width: 210px;
+      height: 30px;
+      margin: auto;
+      outline: none;
+      text-indent: 5px;
+    }
+
+    #nome {
+      margin-bottom: 30px;
+      margin-top: 5px;
+    }
+
+    #data {
+      margin-bottom: 30px;
+      margin-top: 5px;
+      text-indent: 32px;
+
+      &::-webkit-calendar-picker-indicator {
+        display: none;
+      }
+    }
+    /*ínicio da estilização do link para abrir os horários*/
+    #abrirHorarios {
+      font-weight: 700;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-top: 10px;
+      cursor: pointer;
+
+      &:hover {
+        color: #808080;
+        text-decoration: underline;
+      }
+    }
+    /*Fim da estilização do link para abrir os horários*/
+
+    /*ínicio da estilização dos Horários*/
+    #horarios {
+      background-color: #ffffff;
+      border-radius: 5px;
+      display: none;
+      grid-template-columns: repeat(2, 100px);
+      margin: auto;
+      overflow: hidden;
+
+      label {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        border: 1px solid #272727;
+        color: #272727;
+        cursor: pointer;
+        padding: 2px;
 
         input {
-            border-radius: 7px;
-            width: 210px;
-            height: 30px;
-            margin: auto;
-            outline: none;
-            text-indent: 5px;
+          display: none;
         }
+      }
 
-        #nome {
-            margin-bottom: 30px;
-            margin-top: 5px;
-            
-            
+      /*Estilização para quando clicar nos horários que quiser escolher*/
+      label.background-add {
+        background-color: #e4ce6a;
+      }
+
+      /*ínicio da estilização do botão de fechar os horários disponíveis*/
+      i {
+        text-align: center;
+        cursor: pointer;
+        grid-column: span 2;
+        font-size: 25px;
+        color: black;
+        margin: auto;
+        width: 100%;
+
+        &:hover {
+          background-color: #272727;
+          color: #fff;
         }
-
-        #data{
-            margin-bottom: 30px;
-            margin-top: 5px;
-            text-indent: 32px;
-
-            &::-webkit-calendar-picker-indicator {
-                display: none;
-            }
+        &:active {
+          background-color: #5b5b5b;
         }
-        
-        #abrirHorarios{
-                font-weight: 700;
-                text-align: center;
-                font-family: Arial, Helvetica, sans-serif;
-                margin-top: 10px;
-                cursor: pointer;
-    
-                &:hover{
-                    color: #808080;
-                    text-decoration: underline;
-                }
-            }
-        
-
-        #horarios{
-            background-color: #ffffff;
-            border-radius: 5px;
-            display: none;
-            grid-template-columns: repeat(2,100px);
-            margin: auto;
-            overflow: hidden; 
-            
-            label{
-                width: 100%;
-                height: 100%;
-                text-align: center;
-                border: 1px solid #272727;
-                color: #272727;
-                cursor: pointer;
-                padding: 2px;
-
-                input{
-                    display: none;
-                }
-            }
-
-            label.background-add{
-                background-color: #e4ce6a;
-                
-            }
-
-            i{
-                text-align: center;
-                cursor: pointer;
-                grid-column: span 2;
-                font-size: 25px;
-                color: black;
-                margin: auto;
-                width: 100%;
-
-                &:hover{
-                    background-color: #272727;
-                    color: #fff;
-                }
-                &:active{
-                    background-color: #5b5b5b;
-                }
-            }
-        }
-        .service-selection {
-            display: flex;
-            flex-direction: column;
-            margin-top: 50px;
-           
-            h1 {
-                font-size: 1.6em;
-                font-weight: 400;
-                text-align: center;
-                text-shadow: 1px 2px 3px black;
-            }
-
-            #service-option {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-around;
-                margin-top: 10px;
-                cursor: pointer;
-                
-
-                label {
-                    cursor: pointer;
-                    margin: 0 5px;
-                    background: white;
-                    height: 170px;
-                    border-radius: 10px;
-
-                    p {
-                        text-align: center;
-                        margin-top: 5px;
-                        font-size: 16px;
-                        color: #333;
-                    }
-                }
-
-                label.borda-adicionada {
-                    border: 4px solid #e4ce6a;
-                    background-color: #e4ce6ac6 !important;
-                    
-                    p{
-                        color: #000000 ;
-                    }
-                }
-                
-                
-
-                img {
-                    width: 80px;
-                    display: block;
-                    margin: auto;
-                }
-
-                
-
-                
-            }
-            input[type="radio"] {
-                display: none;
-            }
-            
-        }
-
-        .agendar-btn{
-            border-radius: 5px;
-            margin-top: 30px;
-            font-size: 1.1em;
-            height: 30px;
-            background-color: #e4ce6a;
-            cursor: pointer;
-            border: 1px solid rgba(0, 0, 0, 0.519);
-            box-shadow: 1px 1px 2px black;
-            margin-bottom: 50px;
-
-            &:hover{
-                background-color: #ddc34d; 
-            }
-        }
+      }
+      /*Fim da estilização do botão de fechar os horários disponíveis*/
     }
-}
+    /*Fim da estilização dos Horários*/
+
+    /*Ínicio da estilização da escolha de serviços*/
+    .service-selection {
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+
+      h1 {
+        font-size: 1.6em;
+        font-weight: 400;
+        text-align: center;
+        text-shadow: 1px 2px 3px black;
+      }
+
+      /*ínicio da estilização dos card de serviço oferecido*/
+      #service-option {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 10px;
+        cursor: pointer;
+
+        label {
+          cursor: pointer;
+          margin: 0 5px;
+          background: white;
+          height: 170px;
+          border-radius: 10px;
+
+          p {
+            text-align: center;
+            margin-top: 5px;
+            font-size: 16px;
+            color: #333;
+          }
+        }
+        /*Estilização para quando clicar no card*/
+        label.borda-adicionada {
+          border: 4px solid #e4ce6a;
+          background-color: #e4ce6ac6 !important;
+
+          p {
+            color: #000000;
+          }
+        }
+
+        img {
+          width: 80px;
+          display: block;
+          margin: auto;
+        }
+      }
+      /*fim da estilização dos card de serviço oferecido*/
+
+      input[type="radio"] {
+        display: none;
+      }
+    }
+    /*Fim da estilização da escolha de serviços*/
+
+    /*ínicio da estilização do botão de agendar*/
+    .agendar-btn {
+      border-radius: 5px;
+      margin-top: 30px;
+      font-size: 1.1em;
+      height: 30px;
+      background-color: #e4ce6a;
+      cursor: pointer;
+      border: 1px solid rgba(0, 0, 0, 0.519);
+      box-shadow: 1px 1px 2px black;
+      margin-bottom: 20px;
+      &:hover {
+        background-color: #ddc34d;
+      }
+    } /*Fim da estilização do botão de agendar*/
+  } /*Fim da tag form*/
+} /*Fim da section Formulário*/
