@@ -159,6 +159,8 @@ header h1 {
   margin: auto;
   width: 100%;
   margin-top: 15px;
+  overflow: hidden;
+  flex-wrap: wrap;
   cursor: pointer;
   /*Estilização para quando clicar no card*/
 }
@@ -172,6 +174,7 @@ header h1 {
   height: 170px;
   width: 85px;
   border-radius: 10px;
+  margin-bottom: 30px;
 }
 .form form .service-selection #service-option label p {
   text-align: center;
@@ -196,9 +199,8 @@ header h1 {
 }
 .form form .agendar-btn {
   border-radius: 5px;
-  width: 200px;
+  width: 220px;
   margin: auto;
-  margin-top: 30px;
   font-size: 1.1em;
   height: 30px;
   background-color: #e4ce6a;
