@@ -155,15 +155,19 @@ header h1 {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  margin-top: 10px;
+  margin-top: 15px;
   cursor: pointer;
   /*Estilização para quando clicar no card*/
+}
+.form form .service-selection #service-option:active {
+  text-decoration: none;
 }
 .form form .service-selection #service-option label {
   cursor: pointer;
   margin: 0 5px;
   background: white;
   height: 170px;
+  width: 85px;
   border-radius: 10px;
 }
 .form form .service-selection #service-option label p {
