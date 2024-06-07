@@ -160,7 +160,6 @@ header h1 {
   margin-top: 15px;
   overflow: hidden;
   flex-wrap: wrap;
-  cursor: pointer;
   /*Estilização para quando clicar no card*/
 }
 .form form .service-selection #service-option div {
@@ -175,6 +174,7 @@ header h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  -webkit-tap-highlight-color: transparent;
   margin-bottom: 30px;
 }
 .form form .service-selection #service-option div p {
