@@ -170,6 +170,7 @@ header h1 {
 .form form .service-selection #service-option label {
   cursor: pointer;
   margin: 0 5px;
+  outline: none;
   background: white;
   height: 170px;
   width: 70px;
