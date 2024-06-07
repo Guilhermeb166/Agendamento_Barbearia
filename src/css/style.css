@@ -172,13 +172,17 @@ header h1 {
   margin: 0 5px;
   background: white;
   height: 170px;
-  width: 85px;
+  width: 70px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
 }
 .form form .service-selection #service-option label p {
   text-align: center;
-  margin-top: 5px;
+  margin-bottom: 10px;
   font-size: 16px;
   color: #333;
 }
@@ -189,8 +193,13 @@ header h1 {
 .form form .service-selection #service-option label.borda-adicionada p {
   color: #000000;
 }
+.form form .service-selection #service-option label.borda-adicionada img {
+  width: 70px;
+  margin: 10.8px;
+}
 .form form .service-selection #service-option img {
-  width: 80px;
+  width: 70px;
+  height: 100px;
   display: block;
   margin: auto;
 }
